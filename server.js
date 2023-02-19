@@ -21,7 +21,7 @@ mongoose.connect(url,{
 const Todo = require('./models/Todo');
 
 app.get('/todos', async(req, res) => {
-    res.setHeader("Access-Control-Allow-Credentials","true);
+    
     const todo = await Todo.find();
     res.json(todo);
   })
