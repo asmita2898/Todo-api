@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 const url = process.env.MONGO_URL
+mongoose.set("strictQuery", false);
 mongoose.connect(url,{
     useNewUrlParser:true,
     useUnifiedTopology:true
