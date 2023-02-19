@@ -1,0 +1,22 @@
+GET http://localhost:8000/todos
+
+
+###
+POST http://localhost:8000/todo/new
+Content-Type: application/json
+{
+    "text":"Welcome in Atpadi"
+}
+
+###
+DELETE http://localhost:8000/todo/delete/63de71539e5a7b381e7b6a2e
+
+###
+
+GET http://localhost:8000/todo/complete/63de714a9e5a7b381e7b6a2c
+
+###
+
+PUT http://localhost:8000/todo/update/63de714a9e5a7b381e7b6a2c
+
+
